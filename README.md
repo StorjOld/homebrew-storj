@@ -1,4 +1,4 @@
-# Homebrew Driveshare
+# Storj Brews
 
 This is a collection of Homebrew formulas which enable you to more easily install DriveShare utilities on OSX.
 
