@@ -29,11 +29,11 @@ class DownstreamFarmer < Formula
 
   def caveats
     s = <<-EOS.undent
-    You can now start your farmer using the `downstream` command.
+        You can now start your farmer using the `downstream` command.
 
-      Be sure to run your farmer in a directory where your user has
-    write access so a `data` folder can be created if it does not
-    exist already.
+        Be sure to run your farmer in a directory where your user has
+        write access so a `data` folder can be created if it does not
+        exist already.
       EOS
     s
   end
