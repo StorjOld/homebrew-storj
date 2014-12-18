@@ -24,7 +24,7 @@ class DownstreamFarmer < Formula
 
     system "#{venv_path}/bin/python setup.py install"
 
-    FileUtils.ln_s '/usr/local/bin/downstream', "#{venv_path}/bin/downstream"
+    FileUtils.ln_s "#{venv_path}/bin/downstream", '/usr/local/bin/downstream', :force => true
   end
 
   def caveats
