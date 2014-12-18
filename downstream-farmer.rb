@@ -18,9 +18,9 @@ class DownstreamFarmer < Formula
     system 'pip', 'install', 'virtualenv'
 
     venv_path = "#{Dir.home}/.venvs/downstream"
-    unless Dir.exists?(venv_path)
-      system 'virtualenv', '-v', "'#{venv_path}'"
-    end
+    #unless Dir.exists?(venv_path)
+    system 'virtualenv', '-v', "#{venv_path}"
+    #end
 
     system "#{venv_path}/bin/python", "setup.py", "install"
 
