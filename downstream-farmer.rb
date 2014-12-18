@@ -38,5 +38,3 @@ class DownstreamFarmer < Formula
     s
   end
 end
-
-__END__
