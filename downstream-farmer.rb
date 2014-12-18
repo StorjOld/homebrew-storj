@@ -15,7 +15,7 @@ class DownstreamFarmer < Formula
   depends_on 'cryptopp'
 
   def install
-    brew_prefix = `echo $(brew --prefix)`
+    brew_prefix = '/usr/local'
     system "#{brew_prefix}/bin/pip", 'install', 'virtualenv'
 
     venv_path = "#{Dir.home}/.venvs/downstream"
