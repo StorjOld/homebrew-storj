@@ -15,14 +15,14 @@ class DownstreamFarmer < Formula
   depends_on 'cryptopp'
 
   def install
-    system 'pip install virtualenv'
+    system "pip", "install", "virtualenv"
 
     venv_path = "#{Dir.home}/.venvs/downstream"
     unless Dir.exists?(venv_path)
-      `virtualenv #{venv_path}`
+      system "virtualenv", "#{venv_path}"
     end
 
-    system "#{venv_path}/bin/python setup.py install"
+    system "#{venv_path}/bin/python", "setup.py", "install"
 
     FileUtils.ln_s "#{venv_path}/bin/downstream", '/usr/local/bin/downstream', :force => true
   end
