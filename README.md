@@ -1,6 +1,6 @@
 # Storj Brews
 
-This is a collection of Homebrew formulas which enable you to more easily install DriveShare utilities on OSX.
+This is a collection of Homebrew formulas which enable you to more easily install Storj utilities on OSX.
 
 ## Installing Homebrew
 
