@@ -19,7 +19,7 @@ class DownstreamFarmer < Formula
 
     venv_path = "#{Dir.home}/.venvs/downstream"
     unless Dir.exists?(venv_path)
-      system "virtualenv #{venv_path}"
+      system "virtualenv", venv_path
     end
 
     system "#{venv_path}/bin/python setup.py install"
