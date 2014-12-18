@@ -9,7 +9,7 @@ class DownstreamFarmer < Formula
 
   head 'https://github.com/storj/downstream-farmer.git'
 
-  depends_on :python
+  depends_on 'python'
   depends_on :python3 => :optional
   depends_on 'openssl'
   depends_on 'cryptopp'
