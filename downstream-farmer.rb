@@ -15,7 +15,7 @@ class DownstreamFarmer < Formula
   depends_on 'cryptopp'
 
   def install
-    system "'ip', 'install', 'virtualenv'
+    system 'pip', 'install', 'virtualenv'
 
     venv_path = "#{Dir.home}/.venvs/downstream"
     unless Dir.exists?(venv_path)
