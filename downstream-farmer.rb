@@ -35,6 +35,23 @@ class DownstreamFarmer < Formula
         Be sure to run your farmer in a directory where your user has
         write access so a `data` folder can be created if it does not
         exist already.
+
+        If address signing is enabled, you will need to create the 
+        `data/` directory in the same location you are running
+        `downstream`. This folder must contain an `identities.json`
+        file. For example, on Counterwallet, click on Address Actions,
+        and then Sign Message. Type a message of your choice, and click
+        Sign. Then copy and paste the message and signature into the 
+        `identities.json` file in the data/ directory.
+
+        The format should look similar to:
+
+        {
+          "19qVgG8C6eXwKMMyvVegsi3xCsKyk3Z3jV": {
+            "message": "test message",
+            "signature": "HyzVUenXXo4pa+kgm1vS8PNJM83eIXFC5r0q86FGbqFcdla6rcw72/ciXiEPfjli3ENfwWuESHhv6K9esI0dl5I="
+          }
+        }
       EOS
     s
   end
