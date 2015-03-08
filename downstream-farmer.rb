@@ -3,9 +3,9 @@ require 'fileutils'
 
 class DownstreamFarmer < Formula
   homepage 'http://driveshare.org/'
-  url 'https://github.com/Storj/downstream-farmer/archive/v0.1.7.tar.gz'
-  version '0.1.7'
-  sha1 '119d6b74606bdcf909f3060f2441a42a08bb79bc'
+  url 'https://github.com/Storj/downstream-farmer/archive/v0.1.8.tar.gz'
+  version '0.1.8'
+  sha1 'a115dc40a3598d89e4770697a1fa986d2dd20808'
 
   head 'https://github.com/storj/downstream-farmer.git'
 
